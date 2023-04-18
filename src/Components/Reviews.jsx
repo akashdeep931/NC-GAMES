@@ -9,9 +9,7 @@ const Reviews = () => {
 
   useEffect(() => {
     fetchAllReviews().then((data) => {
-      setReviews(() => {
-        return [...data];
-      });
+      setReviews(data);
       setIsLoading(false);
     });
   }, []);
