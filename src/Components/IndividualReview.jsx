@@ -2,12 +2,13 @@ import { useParams } from "react-router-dom";
 import { fetchReviewById } from "../api";
 import { useEffect, useState } from "react";
 import "./style/IndividualReview.css";
+import { formatDate } from "./utils/utils";
 
 const IndividualReview = () => {
   const { review_id } = useParams();
   const [reviewById, setReviewById] = useState({});
   const [isLoading, setIsLoading] = useState(true);
-  const [date, setDate] = useState("");
+  const date = formatDate(reviewById.created_at);
 
   useEffect(() => {
     fetchReviewById(review_id).then((data) => {
@@ -15,15 +16,6 @@ const IndividualReview = () => {
       setIsLoading(false);
     });
   }, [review_id]);
-
-  useEffect(() => {
-    const timestamp = reviewById.created_at;
-    const date = new Date(timestamp);
-    const options = { year: "numeric", month: "long", day: "numeric" };
-    const formattedDate = date.toLocaleDateString("en-UK", options);
-
-    setDate(formattedDate);
-  }, [reviewById]);
 
   return (
     <main>
