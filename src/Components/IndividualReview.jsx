@@ -40,12 +40,10 @@ const IndividualReview = () => {
             <br />
             Category: {reviewById.category}
           </h5>
-          {/* <div> */}
           <figure>
             <img src={reviewById.review_img_url} alt="game protoype" />
           </figure>
           <p>{reviewById.review_body}</p>
-          {/* </div> */}
           <h4>Votes: {reviewById.votes}</h4>
         </section>
       )}
