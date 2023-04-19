@@ -1,9 +1,19 @@
+import { useNavigate } from "react-router-dom";
 import "./style/Header.css";
 
 const Header = () => {
+  const navigate = useNavigate();
+
+  const handleClick = (event) => {
+    event.preventDefault();
+    navigate("/reviews");
+  };
+
   return (
     <header id="main-header">
-      <h1 id="main-title">NC GAMES</h1>
+      <h1 id="main-title" onClick={handleClick}>
+        NC GAMES
+      </h1>
       <nav id="nav-menu">
         <ul id="menu-list">
           <li id="about" className="navigation">

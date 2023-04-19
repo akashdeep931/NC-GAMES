@@ -1,0 +1,77 @@
+#review h3 {
+  color: rgb(52, 50, 50);
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#review h5 {
+  margin-top: -12px;
+  color: rgb(74, 72, 72);
+}
+
+#review p {
+  text-align: justify;
+  background-color: #d2ceb2;
+  margin: auto 20px auto;
+  padding: 40px 30px;
+  overflow: scroll;
+}
+
+figure {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 950px) {
+  #review {
+    display: grid;
+    grid-template-columns: auto 600px;
+    grid-gap: 0;
+  }
+
+  #review h3 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  #review h5 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  #review p {
+    grid-column: 1;
+    grid-row: 3;
+    min-height: 200px;
+    max-height: 300px;
+  }
+
+  #review h4 {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  #review figure {
+    grid-column: 2;
+    grid-row: 2 / span 2;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  #review h5 {
+    margin-bottom: 0;
+  }
+
+  #review p {
+    min-height: auto;
+    max-height: auto;
+    margin-top: -70px;
+  }
+
+  #review h4 {
+    margin-top: -50px;
+  }
+}
