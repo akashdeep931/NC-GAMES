@@ -25,6 +25,7 @@ const Reviews = () => {
             return (
               <ReviewCard
                 key={review_id}
+                review_id={review_id}
                 title={title}
                 review_img_url={review_img_url}
               />

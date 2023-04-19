@@ -9,3 +9,9 @@ export const fetchAllReviews = async () => {
 
   return response.data.reviews;
 };
+
+export const fetchReviewById = async (review_id) => {
+  const response = await myApi.get(`/reviews/${review_id}`);
+
+  return response.data.review;
+};

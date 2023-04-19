@@ -1,3 +1,8 @@
+#to-review-id {
+  text-decoration: none;
+  color: inherit;
+}
+
 #game-card {
   background-color: #d2ceb2;
   border-radius: 10px;
@@ -20,4 +25,8 @@
 
 #game-image img {
   max-width: 100%;
+}
+
+#game-card:hover {
+  transform: scale(1.1);
 }
