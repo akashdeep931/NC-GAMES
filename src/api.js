@@ -15,3 +15,9 @@ export const fetchReviewById = async (review_id) => {
 
   return response.data.review;
 };
+
+export const fetchCommentByReview = async (review_id) => {
+  const response = await myApi.get(`/reviews/${review_id}/comments`);
+
+  return response.data.comments;
+};
