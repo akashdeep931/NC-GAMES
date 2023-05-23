@@ -1,0 +1,24 @@
+#votes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+#votes button {
+  font-size: 22px;
+  border: 1px;
+}
+
+@media only screen and (min-width: 950px) {
+  #votes {
+    grid-column: 1;
+    grid-row: 4;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  #votes {
+    margin-top: -50px;
+  }
+}

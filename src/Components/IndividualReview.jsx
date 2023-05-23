@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import "./style/IndividualReview.css";
 import { formatDate } from "./utils/utils";
 import Comments from "./Comments";
+import Votes from "./Votes";
 
 const IndividualReview = () => {
   const { review_id } = useParams();
@@ -40,7 +41,7 @@ const IndividualReview = () => {
               <img src={reviewById.review_img_url} alt="game protoype" />
             </figure>
             <p>{reviewById.review_body}</p>
-            <h4>Votes: {reviewById.votes}</h4>
+            <Votes votes_count={reviewById.votes} review_id={review_id} />
           </article>
           <aside>
             <Comments

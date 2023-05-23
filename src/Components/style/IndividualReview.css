@@ -49,11 +49,6 @@ img {
     max-height: 300px;
   }
 
-  #review h4 {
-    grid-column: 1;
-    grid-row: 4;
-  }
-
   #review figure {
     grid-column: 2;
     grid-row: 2 / span 2;
@@ -69,9 +64,5 @@ img {
     min-height: auto;
     max-height: auto;
     margin-top: -70px;
-  }
-
-  #review h4 {
-    margin-top: -50px;
   }
 }

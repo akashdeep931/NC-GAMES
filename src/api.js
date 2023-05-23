@@ -21,3 +21,7 @@ export const fetchCommentByReview = async (review_id) => {
 
   return response.data.comments;
 };
+
+export const patchVoteCount = async (review_id, body) => {
+  await myApi.patch(`/reviews/${review_id}`, body);
+};
