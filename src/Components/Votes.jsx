@@ -11,7 +11,6 @@ const Votes = ({ votes_count, review_id }) => {
   const { votesOnReview, setVotesOnReview } = useContext(VotesContext);
   const [count, setCount] = useState(votes_count);
   const [err, setErr] = useState(null);
-  console.log(err);
 
   const handleAddClick = () => {
     if (username) {
@@ -69,6 +68,10 @@ const Votes = ({ votes_count, review_id }) => {
     }
   };
 
+  if (err) {
+    alert("Network issue!\nTry again later...");
+  }
+
   return (
     <section id="votes">
       <button
@@ -96,7 +99,6 @@ const Votes = ({ votes_count, review_id }) => {
       >
         &#x1F44D;
       </button>
-      {err ? alert("Try Again later!") : null}
     </section>
   );
 };
