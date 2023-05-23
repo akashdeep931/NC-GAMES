@@ -88,4 +88,4 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 - The version of Node used to create and deploy this app is 19.4.0
 
-**_NOTE:_** The app is still in development, more features will be implemented soon. :smile
+**_NOTE:_** The app is still in development, more features will be implemented soon. 😃
