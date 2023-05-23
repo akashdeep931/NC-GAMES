@@ -11,7 +11,7 @@ This is a simple responsive front-end project that utilizes the API provided by 
 - As a user I am able to log in with just my name.
 - As a user I am able to log out.
 - As a logged user I am able to like or dislike a review. 
-- As a user I am able to view which reviews I liked or disliked.
+- As a logged user I am able to view which reviews I liked or disliked.
 ```
 
 **Note:** The app is depolyed on Netlify.
