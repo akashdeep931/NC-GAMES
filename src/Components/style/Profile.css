@@ -1,0 +1,60 @@
+#my-posts {
+  margin-top: 40px;
+}
+
+#comment-box {
+  background-color: #7a806c;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  padding: 6rem;
+  margin: 30px 40px 50px;
+}
+
+#vote-box {
+  background-color: #7a806c;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  padding: 6rem;
+  margin: 30px 40px 50px;
+}
+
+#my-posts ul {
+  background-color: #7a806c;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  padding: 6rem;
+  margin: 30px 40px 50px;
+}
+
+#my-posts ul li .links {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media only screen and (min-width: 770px) {
+  #my-posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  #my-comments {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  #comment-box {
+    grid-column: 1/2;
+    grid-row: 2/2;
+  }
+
+  #my-votes {
+    grid-column: 2/2;
+    grid-row: 1/2;
+  }
+
+  #vote-box {
+    grid-column: 2/2;
+    grid-row: 2/2;
+  }
+}

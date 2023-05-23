@@ -26,6 +26,28 @@
   font-weight: 500;
 }
 
+#my-account {
+  cursor: pointer;
+}
+
+#my-acc-box {
+  background-color: #9d805c;
+  padding: 10px;
+}
+
+#my-acc-box ul {
+  padding: 0;
+}
+
+#my-acc-box ul li {
+  list-style: none;
+  margin: 25px;
+}
+
+.account-menu {
+  cursor: pointer;
+}
+
 @media only screen and (min-width: 770px) {
   #main-title {
     text-align: right;

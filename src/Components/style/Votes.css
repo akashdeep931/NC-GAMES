@@ -5,6 +5,11 @@
   gap: 8px;
 }
 
+#votes button {
+  font-size: 22px;
+  border: 1px;
+}
+
 @media only screen and (min-width: 950px) {
   #votes {
     grid-column: 1;
