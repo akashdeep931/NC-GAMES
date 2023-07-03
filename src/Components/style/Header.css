@@ -54,13 +54,6 @@
     padding-right: 40px;
   }
 
-  #menu-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 12px;
-  }
-
   #about {
     margin-left: auto;
   }

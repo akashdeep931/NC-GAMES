@@ -37,12 +37,6 @@ const Header = () => {
       </Link>
       <nav id="nav-menu">
         <ul id="menu-list">
-          <li id="about" className="navigation">
-            About
-          </li>
-          <li id="community" className="navigation">
-            Community
-          </li>
           <li id="my-account" className="navigation" onClick={toggleMenu}>
             My Account
           </li>
